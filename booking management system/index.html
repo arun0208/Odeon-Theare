@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Odeon Theatre- Book Movies Tickets</title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .home {
+            margin: 0px;
+            padding: 0px;
+            background-image: url("/WhatsApp\ Image\ 2021-04-03\ at\ 12.46.35\ PM.jpeg");
+            background-color: #cccccc;
+            height: 700px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 900px;
+
+        }
+
+
+        .login {
+            text-align: center;
+            position: absolute;
+            top: 80%;
+            right: 67%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+            overflow: hidden;
+            font-size: 30px;
+            height: 70%;
+            width: 20%;
+            border: 2px solid white;
+            border-radius: 20px;
+            position: absolute;
+            margin-top: 10px;
+            background-color: black;
+        }
+
+        ul {
+            margin: 0px;
+            list-style-type: none;
+            padding-left: 600px;
+            overflow: hidden;
+            background-color: rgb(10, 10, 10);
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+        }
+
+        li {
+            float: left;
+            padding-left: 20px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            /* font-size: 15px; */
+            /* font-weight: bold; */
+            font-family: 'Roboto Slab', serif;
+
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .body {
+            background-color: #111;
+            height: 610px;
+            position: relative;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            color: #cccccc;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+
+        #logo {
+            width: 50px;
+            height: 50px;
+            float: left;
+            background-color: rgb(10, 10, 10);
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+        }
+
+        .logoname {
+            color: white;
+            margin: 0px;
+            position: relative;
+            top: 12px;
+            right: 610px;
+            font-size: 22px;
+            font-weight: bolder;
+            font-family: 'Lobster', cursive;
+        }
+
+        /* .image{
+            margin: 0px;
+            padding: 0px;
+            height: 30%;
+            width: 40%;
+        } */
+        .main {
+            width: 1200px;
+            height: 200px;
+            position: absolute;
+            top: 6%;
+            right: 2%;
+            border: 2px solid white;
+            background-color: white;
+            background-image: url(/banner-1.jpeg);
+            background-size: 100% 100%;
+            animation: slider 12s infinite ease-in-out;
+            transition-duration: 1s;
+            z-index: 1;
+        }
+
+        @keyframes slider {
+            0% {
+                background-image: url(/banner-1.jpeg);
+            }
+
+            35% {
+                background-image: url(/Roohi-Movie.jpg);
+            }
+
+            70% {
+                background-image: url(/banner-3.jpg);
+            }
+        }
+
+        .contact {
+            margin: 0px;
+            padding: 0px;
+            height: 610px;
+            width: 100%;
+            background-color: #111;
+            color: white;
+            /* border: 3px dashed white; */
+
+        }
+
+        .contact h3 {
+            margin: 0px;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            margin-right: 60px;
+            margin-left: 40px;
+            position: absolute;
+            top: 270%;
+            border: 3px solid white;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: rgb(24, 137, 189);
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            color: grey;
+        }
+
+        .insta {
+            position: absolute;
+            top: 305%;
+            left: 38%;
+        }
+
+        .linkedin {
+            position: absolute;
+            top: 305%;
+            left: 50%;
+        }
+
+        .footer {
+            position: absolute;
+            top: 340%;
+            left: 41%;
+        }
+
+        .page-3 {
+            margin: 0px;
+            position: absolute;
+            left: 42%;
+            font-size: 30px;
+        }
+
+        .ruler1 {
+            margin: 0px;
+            color: white;
+
+        }
+
+        .ruler2 {
+            margin: 0px;
+            color: white;
+
+        }
+
+        .dropbtn {
+            background-color: white;
+            color: rgb(158, 18, 18);
+            padding: 16px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 60px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 15px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: white;
+            background-color: rgb(158, 18, 18);
+        }
+
+        .search {
+            margin: 10px;
+            padding: 5px;
+            /* width: 100%; */
+            position: absolute;
+            top: 60%;
+            left: 9%;
+        }
+
+        .search input[type=text] {
+            border: 1px solid red;
+        }
+
+        .button {
+            position: absolute;
+            top: 80%;
+            left: 22%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home" id="HOME">
+        <img id="logo" src="/favicon.png" alt="">
+
+        <ul>
+
+            <li class="logoname">Odeon Theatre</li>
+            <li><a class="active" href="#HOME">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+        </ul>
+        <div class="main">
+
+        </div>
+
+    </div>
+    <div class="login">
+        <h3>Odeon Theatre</h3>
+        <div class="dropdown">
+            <button class="dropbtn">Cinemas</button>
+            <div class="dropdown-content">
+                <a href="#">Odeon A-1</a>
+                <a href="#">Odeon A-2</a>
+                <a href="#">Odeon A-3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Timings</button>
+            <div class="dropdown-content">
+                <a href="#">9:00 AM</a>
+                <a href="#">12:00 PM</a>
+                <a href="#">3:00 PM</a>
+            </div>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Search Movies">
+        </div>
+        <div class="button">
+            <button type="button">Search Availabilty</button>
+        </div>
+    </div>
+    <hr class="ruler1">
+
+
+    <p class="body" id="about-me"> Hey I am Arun and I am a web developer you can contact me on instagram.</p>
+
+    <hr class="ruler2">
+
+    <div class="contact" id="contact-me">
+        <h2 class="page-3">Contact Page</h2>
+        <h3>Hey Everyone I am Arun, developer of this site. I am student of B.Tech Computer Science and Engineering at
+            Lovely Professional University. If You want to contact me here are my social media handles.
+
+        </h3>
+        <a class="insta" href="https://www.instagram.com/___arun___sharma___/" target="_blank">Instagram&nbsp;|</a>
+        <a class="linkedin" href="https://www.linkedin.com/in/arun-sharma-b42430197/" target="_blank">&nbsp;Linkedin</a>
+        <footer class="footer">
+            &copy; 2021, All rights reserved
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
